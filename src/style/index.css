@@ -9,6 +9,15 @@ body {
   margin-inline: auto;
 }
 
+.center {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Variables
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -26,3 +35,43 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h1 {
+  margin-top: 23%;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--app-white);
+}
+
+.inputs {
+  margin-top: 20px;
+}
+
+input[type=text] {
+  display: inline-block;
+  height: 42px;
+  width: 250px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 42px;
+  color: var(--app-white);
+  background-color: var(--app-content-bg);
+  border-radius: 8px;
+}
+
+button {
+  display: inline-block;
+  margin-left: 18px;
+  height: 42px;
+  width: 100px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 42px;
+  color: var(--app-white);
+  background-color: var(--app-blue);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
