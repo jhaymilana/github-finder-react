@@ -1,0 +1,28 @@
+@import url(./reset.css);
+
+body {
+  background-color: var(--app-bg-dark);
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Variables
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+  --app-bg-dark: #1a1c24;
+  --app-header-footer: #111114;
+  --app-content-bg: #0f1015;
+  --app-shadow: #050506;
+  --app-blue: #257afd;
+  --app-blue-hover: #025fed;
+  --app-white: #fff;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Main
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
