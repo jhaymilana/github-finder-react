@@ -36,7 +36,7 @@ main {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 h1 {
-  margin-top: 23%;
+  margin-top: 27%;
   font-size: 50px;
   font-weight: 600;
   color: var(--app-white);
@@ -134,6 +134,10 @@ img {
 
 .followbtn {
   margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--app-blue-hover);
 }
 
 .repos {

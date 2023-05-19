@@ -50,12 +50,13 @@ function User() {
   // User Info Variables
   const pfp = <figure><img src={ user.avatar_url } alt="Profile" /></figure>;
   const fullName = <p className='full-name'>{ user.name }</p>
-  const userName = <p className='user-name'>{ user.login }</p>
+  const userName = <p className='user-name'>@{ user.login }</p>
   const repoNum = <p className='highlight'>{ user.public_repos }</p>;
   const following = <p className='highlight'>{ user.following }</p>;
   const followers = <p className='highlight'>{ user.followers }</p>;
 
   // Repo Info Variables
+  // fetch is returning data but mapping the array is not working
   const mapRepo = [{repo}].map((object) => {
     return (
       <div className='repo' key={object.data}>
