@@ -57,6 +57,7 @@ input[type=text] {
   color: var(--app-white);
   background-color: var(--app-content);
   border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px var(--app-shadow);
 }
 
 button {
@@ -71,6 +72,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px 1px var(--app-shadow);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -87,6 +89,7 @@ h2 {
   width: 35%;
   padding: 30px;
   background-color: var(--app-content);
+  box-shadow: 2px 2px 2px 1px var(--app-shadow);
   border-radius: 8px;
 }
 
@@ -152,6 +155,7 @@ button:hover {
   width: 100%;
   border-radius: 8px;
   padding: 20px;
+  box-shadow: 2px 2px 2px 1px var(--app-shadow);
 }
 
 .repo p {

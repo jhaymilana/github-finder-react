@@ -13,8 +13,8 @@ function User() {
   const repoURL = `https://api.github.com/users/${ topic }/repos`;
 
   // Redirect Button
-  const followUser = () => {
-    window.location.href = `htttps://github.com/`;
+  const followUser = (url) => {
+    window.open( url,  "noreferrer" );
   }
 
   // Fetch User
@@ -94,7 +94,7 @@ function User() {
             <p>Followers</p>
             </div>
           </div>
-          <button onClick={ followUser } className='followbtn'>
+          <button onClick={ () =>followUser(`https://github.com/${user.login}`) } className='followbtn'>
             Go to GitHub
           </button>
         </div>
