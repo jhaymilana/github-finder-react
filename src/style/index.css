@@ -95,9 +95,24 @@ img {
   border-radius: 50%;
 }
 
+.name {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.full-name {
+  font-size: 32px;
+  color: var(--app-white);
+}
+
+.user-name {
+  font-size: 18px;
+  color: rgb(255, 255, 255, 0.6);
+}
+
 .user-info {
   display: flex;
-  margin-top: 20px;
   height: 75px;
   width: 100%;
 }
@@ -113,6 +128,7 @@ img {
 }
 
 .highlight {
+  font-size: 22px;
   color: #0bc365;
 }
 
@@ -126,10 +142,26 @@ img {
 }
 
 .repo {
+  display: flex;
   background-color: var(--app-content);
   height: 100px;
   width: 100%;
   border-radius: 8px;
+  padding: 20px;
+}
+
+.repo p {
+  color: var(--app-white);
+}
+
+.repo .date {
+  text-align: right;
+  line-height: 60px;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.left, .right {
+  width: 50%;
 }
 
 .repo + .repo {
