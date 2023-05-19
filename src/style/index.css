@@ -23,9 +23,8 @@ main {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 :root {
-  --app-bg-dark: #1a1c24;
-  --app-header-footer: #111114;
-  --app-content-bg: #0f1015;
+  --app-bg-dark: #121212;
+  --app-content: #1d1d1d;
   --app-shadow: #050506;
   --app-blue: #257afd;
   --app-blue-hover: #025fed;
@@ -56,7 +55,7 @@ input[type=text] {
   font-weight: 400;
   line-height: 42px;
   color: var(--app-white);
-  background-color: var(--app-content-bg);
+  background-color: var(--app-content);
   border-radius: 8px;
 }
 
@@ -79,5 +78,60 @@ button {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 h2 {
+  margin-top: 60px;
   color: var(--app-white);
+}
+
+.user {
+  margin-top: 60px;
+  width: 35%;
+  padding: 30px;
+  background-color: var(--app-content);
+  border-radius: 8px;
+}
+
+img {
+  width: 175px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  margin-top: 20px;
+  height: 75px;
+  width: 100%;
+}
+
+.info {
+  height: 100%;
+  margin: 5px;
+  width: 30%;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--app-white);
+}
+
+.highlight {
+  color: #0bc365;
+}
+
+.followbtn {
+  margin-top: 20px;
+}
+
+.repos {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.repo {
+  background-color: var(--app-content);
+  height: 100px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.repo + .repo {
+  margin-top: 20px;
 }
