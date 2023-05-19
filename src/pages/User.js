@@ -57,9 +57,9 @@ function User() {
 
   // Repo Info Variables
   // fetch is returning data but mapping the array is not working
-  const mapRepo = [{repo}].map((object) => {
+  const mapRepo = [{ repo }].map(( object ) => {
     return (
-      <div className='repo' key={object.data}>
+      <div className='repo' key={ object.data }>
         <div className='left'>
           <h3 className='highlight'>repo-name</h3>
           <p>Description of the repo.</p>
@@ -94,7 +94,10 @@ function User() {
             <p>Followers</p>
             </div>
           </div>
-          <button onClick={ () =>followUser(`https://github.com/${user.login}`) } className='followbtn'>
+          <button 
+            onClick={ () => followUser(`https://github.com/${ user.login }`) } 
+            className='followbtn'
+          >
             Go to GitHub
           </button>
         </div>
@@ -102,7 +105,7 @@ function User() {
       <div>
         <h2>Public Repositories</h2>
         <div className='repos'>
-          {mapRepo}
+          { mapRepo }
         </div>
       </div>
     </div>
